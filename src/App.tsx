@@ -722,7 +722,10 @@ function giveObjectArray() : MinifiedChar[] {
   return minifiedChar;
 }
 
-
+function giveStringArray() : string[] {
+  const minifiedCharacter = characters.results.map(results => {return results.origin.name });
+  return minifiedCharacter;
+}
 
 function App() {
   console.log("Aufgabe 1",findAllAliveChars());
